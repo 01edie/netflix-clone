@@ -23,6 +23,10 @@ hr {
   background-color: #1f1f1f;
 
 }
+a{
+  text-decoration: none;
+  color: white;
+}
 
 /* project css  */
 
@@ -63,7 +67,7 @@ hr {
   align-items: center;
 }
 
-.header-right .language {
+.language {
   border: 1px solid white;
   padding: 4px 10px;
   border-radius: 2px;
@@ -117,7 +121,7 @@ hr {
 
 }
 
-.featured form {
+.get-started {
   width: 40rem;
   height: 4rem;
   display: flex;
@@ -128,7 +132,7 @@ hr {
   -o-border-radius: 2px;
 }
 
-.featured form input {
+.get-started input {
   width: 100%;
   height: 4rem;
   border: none;
@@ -137,7 +141,7 @@ hr {
   padding: 5px 15px;
 }
 
-.featured form button {
+.get-started button {
   height: 4rem;
   width: 18rem;
   border: 0;
@@ -190,7 +194,7 @@ hr {
   height: 100%;
 }
 
-.card .media-plate video{
+.card .media-plate .card-1-video{
   position: absolute;
   width: 73%;
   height: 72.5%;
@@ -198,9 +202,181 @@ hr {
   left: 13%;
   top: 11%;
 }
+.card .media-plate .card-3-video{
+  position: absolute;
+  width: 62%;
+  height: 72%;
+  z-index: -1;
+  left: 19%;
+  top: 0%;
+}
 
+.card-2 .text-plate, .card-4 .text-plate{
+  text-align: left;
+  align-items: flex-end;
+}
 
+.card-2 .media-plate{
+  position: relative;
+}
+
+.card-2 .media-plate .downloading{
+  width: 65%;
+  height: 26%;
+  background-color: #000000;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: #4e4d4d 2px solid;
+  position: absolute;
+  top: 65%;
+  left: 18%;
+}
+.boxshot{
+  width: auto!important;
+  height: 100% !important;
+  padding: 5px;
+}
+.downloading{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  padding-right: 1rem;
+}
+.downloading span{
+  font-size: 11px;
+}
+.downloading span h3{
+  color: #3835db;
+  font-weight: 500;
+}
+.downloading span h2{
+  font-weight: 500;
+}
+.downloading .blue-logo{
+  background-color: #1657cf;
+  width: 10%;
+  height: 32%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  
+}
+
+/* faq section  */
+
+.faq-section{
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+li{
+  list-style: none;
+}
+.faqs{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.faq{
+  padding: 1rem 3rem;
+  background-color: #4e4d4d;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.faq span{
+  font-size: 2rem;
+  cursor: pointer;
+}
+/* faq ends  */
+/* footer starts  */
+.footer{
+  margin: 3rem 10rem;
+ 
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.1rem;
+  align-items: flex-start;
+  opacity: 0.5;
+  font-weight: 300;
+  
+  
+}
+.quick-links{
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 10rem;
+}
+.copyright{
+  
+  font-size: 0.85rem;
+}
+.list-item{
+  font-size: 0.8rem;
+}
+
+/* footer ends  */
 /* media queries */
+@media(max-width:992px){
+  html{
+    font-size: 14px;
+  }
+  .card{
+    flex-wrap: wrap;
+    align-items: center;
+
+  }
+  .card .text-plate {
+    text-align: center;
+    align-items: center;
+  }
+  .card-2, .card-4{
+    flex-wrap: wrap-reverse;
+  }
+  .downloading{
+    height: 20% !important;
+  }
+  .blue-logo{
+    width: 8% !important;
+  }
+}
+@media (max-width:768px) {
+  html{
+    font-size: 10px;
+  }
+}
+
+@media (max-width:576px) {
+  html{
+    font-size: 8px;
+  }
+}
+
+
+/* height  */
 @media (max-height:576px){
   .primary {
     height:576px
