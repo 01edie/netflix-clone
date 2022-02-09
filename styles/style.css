@@ -1,54 +1,68 @@
 /* font  */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-html{
+
+html {
   font-size: 16px;
 }
-body{
+
+body {
   background-color: #000000;
   color: white;
 }
 
+hr {
+  height: 7px;
+  border: none;
+  background-color: #1f1f1f;
+
+}
+
 /* project css  */
 
-.primary{
+.primary {
   position: relative;
   height: 100vh;
   width: 100%;
+  margin-bottom: 3rem;
 }
-.primary-bg{
+
+.primary-bg {
   position: absolute;
-  opacity: 0.5;
+  opacity: 0.4;
   height: 100%;
   width: 100%;
   z-index: -1;
 
 }
 
-.header .logo{
+.header .logo {
   width: 10rem;
-  
+
 
 }
-.header{
+
+.header {
   display: flex;
   justify-content: space-between;
   padding: 1rem 3rem;
   align-items: center;
-  
+
 }
-.header-right{
+
+.header-right {
   display: flex;
   gap: 2rem;
   font-size: 1.25rem;
   align-items: center;
 }
-.header-right .language{
+
+.header-right .language {
   border: 1px solid white;
   padding: 4px 10px;
   border-radius: 2px;
@@ -57,7 +71,8 @@ body{
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
 }
-.header-right .sign-in{
+
+.header-right .sign-in {
   background-color: #e50913;
   padding: 4px 10px;
   border-radius: 3px;
@@ -67,7 +82,7 @@ body{
   -o-border-radius: 3px;
 }
 
-.featured{
+.featured {
   margin-top: 4rem;
   height: 50%;
   width: 100%;
@@ -78,26 +93,29 @@ body{
   gap: 1rem;
 }
 
-.featured h1{
+.featured h1 {
   font-size: 3rem;
   font-weight: 700;
   width: 35rem;
   text-align: center;
 }
-.featured h2{
+
+.featured h2 {
   font-size: 2rem;
   width: 35rem;
   text-align: center;
 
 }
-.featured h3{
+
+.featured h3 {
   margin-top: 1rem;
   font-size: 1.2rem;
   width: 55rem;
   text-align: center;
 
 }
-.featured form{
+
+.featured form {
   width: 40rem;
   height: 4rem;
   display: flex;
@@ -107,16 +125,18 @@ body{
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
 }
-.featured form input{
+
+.featured form input {
   width: 100%;
-  height: 100%;
+  height: 4rem;
   border: none;
   outline: none;
   font-size: 1.2rem;
   padding: 5px 15px;
 }
-.featured form button{
-  height: 100%;
+
+.featured form button {
+  height: 4rem;
   width: 18rem;
   border: 0;
   padding: 0;
@@ -124,5 +144,39 @@ body{
   background-color: #dd0510;
   color: white;
   font-size: 1.4rem;
+
+}
+
+/* cards start here */
+
+.card {
+  padding: 2rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.card .text-plate {
+  flex: 55%;
+}
+
+.card .media-plate {
+  flex: 45%;
+  position: relative;
   
+
+}
+
+
+.card .media-plate img {
+  width: 100%;
+  height: 100%;
+}
+
+.card .media-plate video{
+  position: absolute;
+  width: 73%;
+  height: 72.5%;
+  z-index: -1;
+  left: 13%;
+  top: 11%;
 }
