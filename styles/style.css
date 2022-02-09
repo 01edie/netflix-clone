@@ -14,6 +14,7 @@ html {
 body {
   background-color: #000000;
   color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
 hr {
@@ -83,6 +84,7 @@ hr {
 }
 
 .featured {
+  
   margin-top: 4rem;
   height: 50%;
   width: 100%;
@@ -150,13 +152,29 @@ hr {
 /* cards start here */
 
 .card {
-  padding: 2rem 2rem;
+  padding: 2rem 6rem;
   display: flex;
   align-items: center;
 }
 
 .card .text-plate {
   flex: 55%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+
+}
+.card .text-plate h1{
+  font-size: 3rem;
+  width: 30rem;
+}
+.card .text-plate h2{
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: 30rem;
 }
 
 .card .media-plate {
@@ -179,4 +197,12 @@ hr {
   z-index: -1;
   left: 13%;
   top: 11%;
+}
+
+
+/* media queries */
+@media (max-height:576px){
+  .primary {
+    height:576px
+  }
 }
