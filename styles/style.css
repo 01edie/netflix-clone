@@ -375,6 +375,12 @@ li{
   }
 }
 
+@media(max-width:440px){
+  html{
+    font-size: 6px;
+  }
+}
+
 
 /* height  */
 @media (max-height:576px){
