@@ -1,0 +1,128 @@
+/* font  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 16px;
+}
+body{
+  background-color: #000000;
+  color: white;
+}
+
+/* project css  */
+
+.primary{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+.primary-bg{
+  position: absolute;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+
+}
+
+.header .logo{
+  width: 10rem;
+  
+
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  align-items: center;
+  
+}
+.header-right{
+  display: flex;
+  gap: 2rem;
+  font-size: 1.25rem;
+  align-items: center;
+}
+.header-right .language{
+  border: 1px solid white;
+  padding: 4px 10px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+.header-right .sign-in{
+  background-color: #e50913;
+  padding: 4px 10px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.featured{
+  margin-top: 4rem;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.featured h1{
+  font-size: 3rem;
+  font-weight: 700;
+  width: 35rem;
+  text-align: center;
+}
+.featured h2{
+  font-size: 2rem;
+  width: 35rem;
+  text-align: center;
+
+}
+.featured h3{
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  width: 55rem;
+  text-align: center;
+
+}
+.featured form{
+  width: 40rem;
+  height: 4rem;
+  display: flex;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+.featured form input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  padding: 5px 15px;
+}
+.featured form button{
+  height: 100%;
+  width: 18rem;
+  border: 0;
+  padding: 0;
+  outline: none;
+  background-color: #dd0510;
+  color: white;
+  font-size: 1.4rem;
+  
+}
